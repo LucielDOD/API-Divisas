@@ -3,8 +3,9 @@ import logging
 import sys
 from decimal import Decimal
 from modulos.Actualizacion_bd import DatabaseManager
-from modulos.Extraccion_front import extract_html_from_url
+from modulos.Extraccion_front import extract_html_multiple_urls
 from modulos.Comparacion_front import ContentComparer
+from modulos.divisas_list import DIVISAS_SOPORTADAS
 
 # Configurar logging
 logging.basicConfig(
@@ -14,9 +15,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# URL principal de scraping (Google Finance)
-SOURCE_URL = "https://www.google.com/finance/markets/currencies?hl=es"
-
 async def main():
     logger.info("Iniciando orquestación de la API de Divisas...")
     
@@ -24,37 +22,56 @@ async def main():
     db_manager = DatabaseManager()
     comparer = ContentComparer()
 
-    logger.info(f"=== Extrayendo datos desde: {SOURCE_URL} ===")
+    logger.info(f"=== Preparando {len(DIVISAS_SOPORTADAS)} divisas para extracción ===")
     
-    # A. Extraer
-    html_crudo = await extract_html_from_url(SOURCE_URL)
+    # Generar URLs a consultar (Ej: https://www.google.com/finance/quote/EUR-USD?hl=es)
+    # Evitamos USD-USD
+    urls_a_consultar = {}
+    for divisa in set(DIVISAS_SOPORTADAS):
+        if divisa == "USD": 
+            continue
+        url = f"https://www.google.com/finance/quote/{divisa}-USD?hl=es"
+        urls_a_consultar[url] = divisa
+
+    urls_list = list(urls_a_consultar.keys())
     
-    if not html_crudo:
-        logger.error(f"No se pudo obtener el HTML para la URL principal. Abortando.")
+    # A. Extraer multi-URLs (Esto devolverá un diccionario {url: html_content})
+    resultados_html = await extract_html_multiple_urls(urls_list)
+    
+    if not resultados_html:
+        logger.error(f"No se obtuvieron resultados de la extracción de URLs. Abortando.")
         return
         
+    divisas_extraidas = []
+    
     # B. Comparar / Parsear usando clase Decimal
-    # Extrae todos los pares de divisas presentes
-    divisas_extraidas = comparer.snapshot_scraping(html_crudo)
+    for url, html_crudo in resultados_html.items():
+        codigo_divisa = urls_a_consultar[url]
+        divisa_data = comparer.snapshot_scraping_individual(html_crudo, codigo=codigo_divisa)
+        if divisa_data:
+            divisas_extraidas.append(divisa_data)
+            
+    # Añadimos USD manualmente por si se necesita de base
+    divisas_extraidas.append({
+        "codigo": "USD-USD",
+        "valor_comparacion": "USD",
+        "valor_actual": Decimal('1.0')
+    })
     
     if not divisas_extraidas:
-        logger.warning(f"No se extrajeron divisas válidas. Verifica la estructura del HTML en snapshot_scraping.")
+        logger.warning(f"No se extrajeron divisas válidas. Verifica la estructura del HTML.")
         return
         
     logger.info(f"Guardando {len(divisas_extraidas)} registros en la base de datos...")
     
     # C. Guardar en Base de Datos
     for divisa in divisas_extraidas:
-        codigo = divisa["codigo"]
+        codigo_db = divisa["codigo"] # e.g. "EUR-USD"
         comparacion = divisa["valor_comparacion"]
         valor_actual = divisa["valor_actual"]
         
-        # Opcional: calcular un relativo utilizando el factor. Para Google Finance es 1:1 ya que el precio *ES* la comparación.
+        # Para Google Finance individual, el precio es el relativo directo.
         total_calc = comparer.calculate_relative_value(valor_actual, Decimal('1.0'))
-        
-        # Almacenamos el código como un par completo para evitar sobreescritura (e.g., 'EUR/USD' en vez de solo 'EUR')
-        # Esto porque Google Finance da EUR/USD, EUR/JPY, etc.
-        codigo_db = f"{codigo}/{comparacion}"
         
         db_manager.upsert_divisa(
             codigo=codigo_db,

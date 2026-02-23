@@ -23,49 +23,38 @@ class ContentComparer:
             logger.error(f"Error cargando la plantilla: {e}")
             return ""
 
-    def snapshot_scraping(self, html_obtenido: str) -> List[Dict]:
+    def snapshot_scraping_individual(self, html_obtenido: str, codigo: str) -> dict:
         """
-        Extrae todos los pares de divisas presentes en el HTML (ej. de Google Finance).
-        Retorna una lista de diccionarios con la estructura:
-        [
-            {
-                "codigo": "EUR",
-                "valor_comparacion": "USD",
-                "valor_actual": Decimal("1.1826")
-            }, ...
-        ]
+        Extrae el valor actual de la divisa desde la página individual de Google Finance (ej. código-USD).
+        Retorna un diccionario con la estructura:
+        {
+            "codigo": "EUR-USD",
+            "valor_comparacion": "USD",
+            "valor_actual": Decimal("1.1826")
+        }
         """
         if not html_obtenido:
-            logger.warning("HTML obtenido está vacío.")
-            return []
+            logger.warning(f"HTML obtenido está vacío para {codigo}.")
+            return None
 
         soup = BeautifulSoup(html_obtenido, 'html.parser')
-        lis = soup.find_all('li')
-        divisas = []
-
-        for li in lis:
-            textos = [t for t in li.stripped_strings]
+        
+        # Google Finance usa esta clase para el precio actual principal
+        price_div = soup.find('div', class_='YMlKec fxKbKc')
+        
+        if price_div:
+            valor_str = price_div.text
+            valor_decimal = self._parse_decimal(valor_str)
             
-            # Buscamos elementos que tengan al menos 4 textos y contengan un par de divisas (ej. 'EUR / USD')
-            if len(textos) >= 4 and '/' in textos[1]:
-                par = textos[1].split('/')
-                if len(par) == 2:
-                    codigo = par[0].strip()
-                    comparacion = par[1].strip()
-                    
-                    valor_str = textos[2]
-                    
-                    valor_decimal = self._parse_decimal(valor_str)
-                    
-                    if valor_decimal > Decimal('0'):
-                        divisas.append({
-                            "codigo": codigo,
-                            "valor_comparacion": comparacion,
-                            "valor_actual": valor_decimal
-                        })
-
-        logger.info(f"Se extrajeron {len(divisas)} pares de divisas exitosamente.")
-        return divisas
+            if valor_decimal > Decimal('0'):
+                return {
+                    "codigo": f"{codigo}-USD",
+                    "valor_comparacion": "USD",
+                    "valor_actual": valor_decimal
+                }
+                
+        logger.warning(f"No se pudo encontrar el precio para {codigo}-USD.")
+        return None
 
     def _parse_decimal(self, numero_str: str) -> Decimal:
         """Normaliza y convierte una cadena a Decimal de forma segura."""
