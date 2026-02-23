@@ -36,5 +36,9 @@ jobs:
           git config --global pull.rebase true
           git add Almacenamiento/divisas.db datos.json
           git commit -m "Automated update: Divisas data e index.html [skip ci]" || echo "No changes to commit"
+          # Escondemos temporalmente basura (ej: __pycache__, logs del db) para que el rebase no choque
+          git stash --include-untracked
           git pull origin main
+          # Restauramos la basura local en caso de necesitarse luego, y descartamos
+          git stash pop || true
           git push
