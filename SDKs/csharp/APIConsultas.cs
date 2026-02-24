@@ -1,0 +1,135 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http;
+using System.Text.Json;
+using System.Threading.Tasks;
+
+/// <summary>
+/// APIConsultas.cs
+/// SDK en C# para consultar la API de Divisas nativamente en Windows, Unity, Xamarin/MAUI y Backend .NET.
+/// Utiliza HttpClient y System.Text.Json incluidos en .NET Core/.NET 5+ sin dependencias de terceros.
+/// </summary>
+public static class APIConsultas
+{
+    private const string URL_DATOS_GITHUB = "https://LucielDOD.github.io/API-Divisas/datos.json";
+    private static readonly HttpClient client = new HttpClient();
+
+    public class RespuestaAPI
+    {
+        public string Status { get; set; }
+        public string Mensaje { get; set; }
+        public string FechaConsulta { get; set; }
+
+        // Pedir lista
+        public int Cantidad { get; set; }
+        public List<string> Divisas { get; set; }
+
+        // Pedir conversion
+        public string Codigo { get; set; }
+        public decimal Valor { get; set; }
+        public string DivisaBase { get; set; }
+        public string DivisaObjetivo { get; set; }
+    }
+
+    // Estructura interna para deserializar el JSON del repositorio
+    private class DivisaJson
+    {
+        public string codigo { get; set; }
+        public string valor_actual { get; set; }
+    }
+
+    private static string GetFechaLocal()
+    {
+        // Toma la fecha y hora de la máquina de Windows/Linux del usuario
+        return DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss");
+    }
+
+    public static async Task<RespuestaAPI> SolicitarDivisasDisponiblesAsync()
+    {
+        var res = new RespuestaAPI();
+        try
+        {
+            var response = await client.GetAsync(URL_DATOS_GITHUB);
+            response.EnsureSuccessStatusCode();
+            var jsonString = await response.Content.ReadAsStringAsync();
+
+            var datos = JsonSerializer.Deserialize<List<DivisaJson>>(jsonString);
+            var codigos = datos
+                .Select(d => d.codigo.Replace("-USD", ""))
+                .Distinct()
+                .OrderBy(c => c)
+                .ToList();
+
+            res.Status = "success";
+            res.Cantidad = codigos.Count;
+            res.Divisas = codigos;
+            res.FechaConsulta = GetFechaLocal();
+        }
+        catch (Exception ex)
+        {
+            res.Status = "error";
+            res.Mensaje = $"Error al obtener divisas: {ex.Message}";
+        }
+        return res;
+    }
+
+    public static async Task<RespuestaAPI> SolicitarValorDivisaAsync(string divisaBase, string divisaObjetivo)
+    {
+        var res = new RespuestaAPI();
+        divisaBase = divisaBase.ToUpper();
+        divisaObjetivo = divisaObjetivo.ToUpper();
+
+        try
+        {
+            var response = await client.GetAsync(URL_DATOS_GITHUB);
+            response.EnsureSuccessStatusCode();
+            var jsonString = await response.Content.ReadAsStringAsync();
+
+            var datos = JsonSerializer.Deserialize<List<DivisaJson>>(jsonString);
+            
+            // Mapeamos los códigos a sus valores en USD
+            var valoresEnUSD = new Dictionary<string, decimal>();
+            foreach (var d in datos)
+            {
+                string codigoLimpio = d.codigo.Replace("-USD", "");
+                if (decimal.TryParse(d.valor_actual, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out decimal val))
+                {
+                    valoresEnUSD[codigoLimpio] = val;
+                }
+            }
+
+            if (!valoresEnUSD.ContainsKey(divisaBase))
+            {
+                res.Status = "error";
+                res.Mensaje = $"La divisa base '{divisaBase}' no se encuentra.";
+                return res;
+            }
+            if (!valoresEnUSD.ContainsKey(divisaObjetivo))
+            {
+                res.Status = "error";
+                res.Mensaje = $"La divisa objetivo '{divisaObjetivo}' no se encuentra.";
+                return res;
+            }
+
+            decimal valBase = valoresEnUSD[divisaBase];
+            decimal valObj = valoresEnUSD[divisaObjetivo];
+
+            // Math: (Base/USD) / (Objetivo/USD)
+            decimal resultado = Math.Round(valBase / valObj, 4);
+
+            res.Status = "success";
+            res.Codigo = $"{divisaBase}-{divisaObjetivo}";
+            res.Valor = resultado;
+            res.DivisaBase = divisaBase;
+            res.DivisaObjetivo = divisaObjetivo;
+            res.FechaConsulta = GetFechaLocal();
+        }
+        catch (Exception ex)
+        {
+            res.Status = "error";
+            res.Mensaje = $"Error al calcular conversiones: {ex.Message}";
+        }
+        return res;
+    }
+}
