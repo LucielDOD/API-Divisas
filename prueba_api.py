@@ -1,4 +1,5 @@
 import sys
+<<<<<<< Updated upstream
 import os
 
 # Ajustamos el path para que encuentre el nuevo SDK
@@ -61,3 +62,50 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print("\nSaliendo de la prueba de API de forma forzada...")
         sys.exit(0)
+=======
+from modulos.API_consultas import Solicitar_Divisas_Disponibles, Solicitar_Valor_Divisa
+
+def main():
+    while True:
+        print("\n--- Menú de Pruebas API de Divisas ---")
+        print("1. Ver divisas disponibles")
+        print("2. Consultar valor de conversión (Ej: EUR -> CLP)")
+        print("3. Salir")
+        
+        opcion = input("Elige una opción (1/2/3): ").strip()
+        
+        if opcion == '1':
+            print("\nConsultando divisas disponibles...")
+            divisas = Solicitar_Divisas_Disponibles()
+            if divisas:
+                print(f"Total de divisas: {len(divisas)}")
+                print(", ".join(divisas))
+            else:
+                print("No se encontraron divisas o hubo un error.")
+                
+        elif opcion == '2':
+            divisa_1 = input("\nIngresa la divisa de origen (ej. EUR, USD): ").strip().upper()
+            divisa_2 = input("Ingresa la divisa de destino (ej. CLP, MXN): ").strip().upper()
+            
+            if not divisa_1 or not divisa_2:
+                print("Debes ingresar ambas divisas.")
+                continue
+                
+            print(f"\nConsultando: 1 {divisa_1} a {divisa_2}...")
+            valor = Solicitar_Valor_Divisa(divisa_1, divisa_2)
+            
+            if valor > 0:
+                print(f"\nResultado: 1 {divisa_1} = {valor:.4f} {divisa_2}")
+            else:
+                print("\nError al obtener el valor o las divisas no existen.")
+                
+        elif opcion == '3':
+            print("\nSaliendo...")
+            sys.exit(0)
+            
+        else:
+            print("\nOpción no válida. Intenta de nuevo.")
+
+if __name__ == "__main__":
+    main()
+>>>>>>> Stashed changes
