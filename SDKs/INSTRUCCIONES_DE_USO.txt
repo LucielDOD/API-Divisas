@@ -1,0 +1,108 @@
+===================================================
+  API de Divisas - Instrucciones de Uso del SDK
+===================================================
+
+Endpoint de datos: https://LucielDOD.github.io/API-Divisas/datos.json
+Los datos se actualizan automáticamente cada hora mediante GitHub Actions.
+Todas las divisas se calculan en relación al USD (Dólar americano).
+La "fecha_consulta" en cada respuesta usa la hora local del dispositivo del usuario.
+
+
+---------------------------------------------------
+ 1. JAVASCRIPT  -  SDKs/javascript/API_consultas.js
+---------------------------------------------------
+Plataformas: Web, React, React Native (iOS/Android), Node.js
+Requisito:   Ninguno. fetch() es nativo en todos los navegadores modernos y Node 18+
+
+  >> En una página HTML:
+     <script src="API_consultas.js"></script>
+     <script>
+       APIConsultas.solicitarDivisasDisponibles()
+         .then(r => console.log(r.divisas)); // ['ARS', 'EUR', ...]
+
+       APIConsultas.solicitarValorDivisa('USD', 'CLP')
+         .then(r => console.log(r));
+         // { status:'success', codigo:'USD-CLP', valor:833.33, ... }
+     </script>
+
+  >> En Node.js o React Native:
+     const API = require('./API_consultas.js');
+     const r = await API.solicitarValorDivisa('USD', 'EUR');
+     console.log(r.valor);
+
+
+---------------------------------------------------
+ 2. PYTHON  -  SDKs/python/API_consultas.py
+---------------------------------------------------
+Plataformas: Scripts, Backend, Data Science
+Requisito:   Python 3 + requests  (pip install requests)
+
+  from API_consultas import Solicitar_Divisas_Disponibles, Solicitar_Valor_Divisa
+
+  d = Solicitar_Divisas_Disponibles()
+  print(d['divisas'])        # ['ARS', 'EUR', 'USD', ...]
+
+  r = Solicitar_Valor_Divisa('USD', 'CLP')
+  print(r)
+  # {'status': 'success', 'codigo': 'USD-CLP', 'valor': 833.3333, ...}
+
+
+---------------------------------------------------
+ 3. JAVA  -  SDKs/java/APIConsultas.java
+---------------------------------------------------
+Plataformas: Android, Desktop Java, Backend
+Requisito:   JDK (Java Development Kit) - solo librerías estándar, sin dependencias
+
+  >> Compilar una vez:
+     javac APIConsultas.java
+
+  >> Usar en tu proyecto (copiar APIConsultas.java a tu proyecto):
+     APIConsultas.RespuestaAPI d = APIConsultas.solicitarDivisasDisponibles();
+     System.out.println(d.divisas); // [ARS, EUR, USD, ...]
+
+     APIConsultas.RespuestaAPI r = APIConsultas.solicitarValorDivisa("USD", "CLP");
+     System.out.println("1 USD = " + r.valor + " CLP");
+
+  >> En Android Studio: Copia APIConsultas.java a /app/src/main/java/
+     Llámalo desde un hilo secundario (Thread/AsyncTask/Coroutine)
+     ya que realiza una petición de red.
+
+
+---------------------------------------------------
+ 4. C#  -  SDKs/csharp/APIConsultas.cs
+---------------------------------------------------
+Plataformas: Windows (.NET), Unity, MAUI/Xamarin (iOS/Android)
+Requisito:   .NET 5 o superior - HttpClient y System.Text.Json vienen incluidos
+
+  >> Copiar APIConsultas.cs a tu proyecto y usar:
+     var d = await APIConsultas.SolicitarDivisasDisponiblesAsync();
+     Console.WriteLine(string.Join(", ", d.Divisas));
+
+     var r = await APIConsultas.SolicitarValorDivisaAsync("USD", "CLP");
+     Console.WriteLine($"1 USD = {r.Valor} CLP");
+
+  NOTA: Para Unity usa UnityWebRequest en lugar de HttpClient.
+
+
+---------------------------------------------------
+ ESTRUCTURA DE RESPUESTA (todos los lenguajes)
+---------------------------------------------------
+
+  status         : "success" o "error"
+  mensaje        : Descripción del error (solo si hubo error)
+
+  -- Listado de divisas --
+  cantidad       : Total de divisas disponibles
+  divisas        : Lista de códigos  (["USD", "EUR", "CLP", ...])
+  fecha_consulta : Hora local del cliente  (dd-MM-yyyy HH:mm:ss)
+
+  -- Conversión --
+  codigo         : Par consultado  ("USD-CLP")
+  valor          : Resultado de la conversión  (número decimal)
+  divisa_base    : Divisa base
+  divisa_objetivo: Divisa objetivo
+  fecha_consulta : Hora local del cliente  (dd-MM-yyyy HH:mm:ss)
+
+NOTA: "fecha_actualizacion" en el JSON bruto = hora del servidor GitHub (GMT/UTC).
+
+===================================================

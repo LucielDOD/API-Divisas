@@ -70,34 +70,57 @@ public class APIConsultas {
     }
 
     /**
-     * Parsea de manera rústica el JSON específico que entrega la API para evitar
-     * dependencias
-     * externas como GSON o Jackson. Solo útil para este schema en particular.
+     * Parsea el JSON de la API y construye un mapa de valores en USD.
+     * El JSON tiene dos formatos de código:
+     * - "XXX/USD" o "XXX-USD" → valor_actual ya es precio de XXX en USD
+     * - "USD/YYY" o "USD-YYY" → valor_actual es precio de USD en YYY, hay que
+     * invertirlo
+     * El campo valor_actual viene entre comillas (es string en el JSON).
      */
     private static Map<String, BigDecimal> extractValoresDesdeJson(String json) {
         Map<String, BigDecimal> mapa = new HashMap<>();
 
-        // Agregar manualmente el USD ya que todos los datos son relativos al USD
-        mapa.put("USD", new BigDecimal("1.0"));
+        // USD siempre vale 1 respecto a sí mismo
+        mapa.put("USD", BigDecimal.ONE);
 
-        // Regex para buscar "codigo": "EUR-USD" y "valor_actual": 0.84
-        Pattern pCodigo = Pattern.compile("\"codigo\"\\s*:\\s*\"([^\"]+)\"");
-        Pattern pValor = Pattern.compile("\"valor_actual\"\\s*:\\s*([0-9.]+)");
+        // Regex: codigo siempre entre comillas, valor_actual también entre comillas
+        Pattern pEntrada = Pattern.compile(
+                "\"codigo\"\\s*:\\s*\"([^\"]+)\"[\\s\\S]*?\"valor_actual\"\\s*:\\s*\"([^\"]+)\"");
 
-        Matcher mCodigo = pCodigo.matcher(json);
-        Matcher mValor = pValor.matcher(json);
+        Matcher m = pEntrada.matcher(json);
 
-        // Asumiendo que vienen en el mismo orden dentro del objeto
-        while (mCodigo.find() && mValor.find()) {
-            String codigoOriginal = mCodigo.group(1);
-            String codigoLimpio = codigoOriginal.replace("-USD", "");
-            String valorStr = mValor.group(1);
+        while (m.find()) {
+            String codigoOriginal = m.group(1); // e.g. "EUR/USD", "USD/JPY", "CLP-USD"
+            String valorStr = m.group(2); // e.g. "1.1829", "154.399"
 
             try {
                 BigDecimal valor = new BigDecimal(valorStr);
-                mapa.put(codigoLimpio, valor);
+
+                // Normalizar: separar las dos monedas del par
+                String[] partes = codigoOriginal.split("[/\\-]");
+                if (partes.length != 2)
+                    continue;
+
+                String monedaA = partes[0].trim().toUpperCase();
+                String monedaB = partes[1].trim().toUpperCase();
+
+                if (monedaB.equals("USD")) {
+                    // Formato "XXX/USD" → valor_actual es precio de XXX en USD directamente
+                    mapa.put(monedaA, valor);
+                } else if (monedaA.equals("USD")) {
+                    // Formato "USD/YYY" → valor_actual es cuántos YYY vale 1 USD,
+                    // invertimos para saber cuántos USD vale 1 YYY.
+                    if (valor.compareTo(BigDecimal.ZERO) != 0) {
+                        BigDecimal inverso = BigDecimal.ONE.divide(valor, 8, RoundingMode.HALF_UP);
+                        // Solo registrar si todavía no tenemos ese código
+                        mapa.putIfAbsent(monedaB, inverso);
+                    }
+                }
+                // Pares cruzados (ej. EUR/JPY) se ignoran porque no sirven para
+                // calcular el valor base en USD de forma confiable.
+
             } catch (Exception e) {
-                // Ignorar valor invalido
+                // Ignorar entradas mal formadas
             }
         }
 
