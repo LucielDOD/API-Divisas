@@ -32,6 +32,20 @@ class DatabaseManager:
             logger.error(f"Error inicializando la base de datos: {e}")
             raise
 
+    def limpiar_tabla(self):
+        """Borra todos los registros de la tabla divisas antes de una nueva actualización.
+        Esto garantiza que datos.json solo contenga las divisas actualmente disponibles,
+        sin acumular entradas obsoletas de corridas anteriores."""
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                cursor = conn.cursor()
+                cursor.execute('DELETE FROM divisas')
+                conn.commit()
+            logger.info("Tabla divisas limpia. Lista para nueva actualización.")
+        except Exception as e:
+            logger.error(f"Error limpiando la tabla divisas: {e}")
+            raise
+
     def upsert_divisa(self, codigo: str, valor_actual: Decimal, valor_comparacion: str = "", total_calculado: Decimal = None):
         """Inserta o actualiza una divisa en la base de datos conservando precisión decimal como TEXT."""
         query = '''

@@ -102,7 +102,8 @@ async def main():
         
     logger.info(f"Guardando {len(divisas_extraidas)} registros en la base de datos...")
     
-    # C. Guardar en Base de Datos
+    # C. Limpiar tabla y guardar datos frescos (evitar acumulacion de datos obsoletos)
+    db_manager.limpiar_tabla()
     for divisa in divisas_extraidas:
         codigo_db = divisa["codigo"] # e.g. "EUR-USD"
         comparacion = divisa["valor_comparacion"]
