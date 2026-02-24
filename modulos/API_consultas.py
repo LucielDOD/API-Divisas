@@ -1,15 +1,17 @@
 import requests
 from decimal import Decimal
 
-# URL por defecto donde se alojarán los datos en GitHub Pages
-URL_DATOS_GITHUB = "https://LucielDOD.github.io/API-Divisas/datos.json"
-# Puedes reemplazar la URL de arriba con tu raw URL si Pages tarda en actualizarse:
-# "https://raw.githubusercontent.com/LucielDOD/API-Divisas/main/datos.json"
+# Eliminamos la URL hardcodeada de aquí para que sea el usuario/cliente (prueba_api) 
+# quien le diga a nuestra API dónde ir a buscar los datos.
 
-def Solicitar_Divisas_Disponibles(url_origen: str = URL_DATOS_GITHUB) -> list:
+def Solicitar_Divisas_Disponibles(url_origen: str) -> list:
     """
     Obtiene la lista de códigos de divisas disponibles leyendo el JSON remoto.
     """
+    if not url_origen:
+        print("Error: Se requiere una URL de origen válida.")
+        return []
+        
     try:
         response = requests.get(url_origen)
         response.raise_for_status()
@@ -23,13 +25,17 @@ def Solicitar_Divisas_Disponibles(url_origen: str = URL_DATOS_GITHUB) -> list:
         print(f"Error al obtener divisas disponibles: {e}")
         return []
 
-def Solicitar_Valor_Divisa(divisa_1: str, divisa_2: str, url_origen: str = URL_DATOS_GITHUB) -> Decimal:
+def Solicitar_Valor_Divisa(divisa_1: str, divisa_2: str, url_origen: str) -> Decimal:
     """
     Calcula el valor de divisa_1 expresado en divisa_2 extrayendo los datos remotamente.
     La fuente almacena todo respecto a USD.
     Por lo tanto: divisa_1 a divisa_2 = (Valor divisa_1 en USD) / (Valor divisa_2 en USD)
-    EJ: Solicitar_Valor_Divisa('EUR', 'CLP')
+    EJ: Solicitar_Valor_Divisa('EUR', 'CLP', url_origen='https://...')
     """
+    if not url_origen:
+        print("Error: Se requiere una URL de origen válida.")
+        return Decimal('0')
+        
     divisa_1 = divisa_1.upper()
     divisa_2 = divisa_2.upper()
 

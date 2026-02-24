@@ -3,7 +3,7 @@ name: Actualización Divisas
 on:
   schedule:
     # Se ejecuta cada 4 horas
-    - cron: "0 */4 * * *"
+    - cron: "0 */1 * * *"
   workflow_dispatch: # Permite ejecución manual desde GitHub
 
 jobs:
