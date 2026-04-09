@@ -1,926 +1,926 @@
 [
     {
-        "codigo": "GEL-USD",
-        "valor_actual": "0.3725",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.3725",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "MAD-USD",
-        "valor_actual": "0.1077",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.1077",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "MYR-USD",
-        "valor_actual": "0.2508",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.2508",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "FJD-USD",
-        "valor_actual": "0.4515",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.4515",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "MZN-USD",
-        "valor_actual": "0.0156",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0156",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "MNT-USD",
-        "valor_actual": "0.6587",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.6587",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "LYD-USD",
-        "valor_actual": "0.1576",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.1576",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "JOD-USD",
-        "valor_actual": "1.4104",
-        "valor_comparacion": "USD",
-        "total_calculado": "1.4104",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "COP-USD",
-        "valor_actual": "0.00027",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.00027",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
         "codigo": "MXN-USD",
-        "valor_actual": "0.0572",
+        "valor_actual": "0.0573",
         "valor_comparacion": "USD",
-        "total_calculado": "0.0572",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "AFN-USD",
-        "valor_actual": "0.0156",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0156",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "IDR-USD",
-        "valor_actual": "0.000058",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.000058",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "AZN-USD",
-        "valor_actual": "0.5882",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.5882",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "AUD-USD",
-        "valor_actual": "0.7025",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.7025",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "XPF-USD",
-        "valor_actual": "0.0098",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0098",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "PHP-USD",
-        "valor_actual": "0.0167",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0167",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "CAD-USD",
-        "valor_actual": "0.7217",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.7217",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "UZS-USD",
-        "valor_actual": "0.000082",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.000082",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "BMD-USD",
-        "valor_actual": "1",
-        "valor_comparacion": "USD",
-        "total_calculado": "1",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "DOP-USD",
-        "valor_actual": "0.0165",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0165",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "XAF-USD",
-        "valor_actual": "0.0018",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0018",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "UAH-USD",
-        "valor_actual": "0.0231",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0231",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "BYN-USD",
-        "valor_actual": "0.3428",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.3428",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "DZD-USD",
-        "valor_actual": "0.0075",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0075",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "CLF-USD",
-        "valor_actual": "43.8648",
-        "valor_comparacion": "USD",
-        "total_calculado": "43.8648",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "CUP-USD",
-        "valor_actual": "0.0417",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0417",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "KRW-USD",
-        "valor_actual": "0.00067",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.00067",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "SOS-USD",
-        "valor_actual": "0.0017",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0017",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "VES-USD",
-        "valor_actual": "0.0021",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0021",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "JPY-USD",
-        "valor_actual": "0.0063",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0063",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "CLP-USD",
-        "valor_actual": "0.0011",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0011",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "NZD-USD",
-        "valor_actual": "0.583",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.583",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "XCD-USD",
-        "valor_actual": "0.37",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.37",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "CNY-USD",
-        "valor_actual": "0.1463",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.1463",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "SGD-USD",
-        "valor_actual": "0.7841",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.7841",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "JMD-USD",
-        "valor_actual": "0.0064",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0064",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "BTN-USD",
-        "valor_actual": "0.0108",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0108",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "BND-USD",
-        "valor_actual": "0.7849",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.7849",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "UGX-USD",
-        "valor_actual": "0.00027",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.00027",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "RSD-USD",
-        "valor_actual": "0.0099",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0099",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "MKD-USD",
-        "valor_actual": "0.0189",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0189",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "PAB-USD",
-        "valor_actual": "1.0012",
-        "valor_comparacion": "USD",
-        "total_calculado": "1.0012",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "MOP-USD",
-        "valor_actual": "0.124",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.124",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "CRC-USD",
-        "valor_actual": "0.0022",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0022",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "PKR-USD",
-        "valor_actual": "0.0036",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0036",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "GHS-USD",
-        "valor_actual": "0.0908",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0908",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "PLN-USD",
-        "valor_actual": "0.2735",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.2735",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "DKK-USD",
-        "valor_actual": "0.156",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.156",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "BOB-USD",
-        "valor_actual": "0.1448",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.1448",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "MMK-USD",
-        "valor_actual": "0.00031",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.00031",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "PYG-USD",
-        "valor_actual": "0.00015",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.00015",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "GNF-USD",
-        "valor_actual": "0.00011",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.00011",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
+        "total_calculado": "0.0573",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
     },
     {
         "codigo": "CNH-USD",
         "valor_actual": "0.1462",
         "valor_comparacion": "USD",
         "total_calculado": "0.1462",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "ILS-USD",
-        "valor_actual": "0.3233",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.3233",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "LBP-USD",
-        "valor_actual": "0.000011",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.000011",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "KMF-USD",
-        "valor_actual": "0.0024",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0024",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "MVR-USD",
-        "valor_actual": "0.0647",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0647",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "SDG-USD",
-        "valor_actual": "0.0017",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0017",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "VND-USD",
-        "valor_actual": "0.000038",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.000038",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "GTQ-USD",
-        "valor_actual": "0.1308",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.1308",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "SEK-USD",
-        "valor_actual": "0.1075",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.1075",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "CDF-USD",
-        "valor_actual": "0.00043",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.00043",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "GYD-USD",
-        "valor_actual": "0.0048",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0048",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "LAK-USD",
-        "valor_actual": "0.000045",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.000045",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "NGN-USD",
-        "valor_actual": "0.00073",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.00073",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "SHP-USD",
-        "valor_actual": "1.3424",
-        "valor_comparacion": "USD",
-        "total_calculado": "1.3424",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "DJF-USD",
-        "valor_actual": "0.0056",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0056",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "CZK-USD",
-        "valor_actual": "0.0478",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0478",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "THB-USD",
-        "valor_actual": "0.0312",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0312",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "BRL-USD",
-        "valor_actual": "0.1957",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.1957",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "EUR-USD",
-        "valor_actual": "1.166",
-        "valor_comparacion": "USD",
-        "total_calculado": "1.166",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "BIF-USD",
-        "valor_actual": "0.00034",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.00034",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "ALL-USD",
-        "valor_actual": "0.0121",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0121",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "EGP-USD",
-        "valor_actual": "0.0188",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0188",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "RON-USD",
-        "valor_actual": "0.2289",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.2289",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "SZL-USD",
-        "valor_actual": "0.061",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.061",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "TND-USD",
-        "valor_actual": "0.3458",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.3458",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "TWD-USD",
-        "valor_actual": "0.0314",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0314",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "INR-USD",
-        "valor_actual": "0.0108",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0108",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "NPR-USD",
-        "valor_actual": "0.0068",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0068",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "SAR-USD",
-        "valor_actual": "0.2665",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.2665",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "CVE-USD",
-        "valor_actual": "0.0106",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0106",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "HTG-USD",
-        "valor_actual": "0.0076",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0076",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "SCR-USD",
-        "valor_actual": "0.0729",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0729",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "ISK-USD",
-        "valor_actual": "0.0081",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0081",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "PEN-USD",
-        "valor_actual": "0.2938",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.2938",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "CHF-USD",
-        "valor_actual": "1.264",
-        "valor_comparacion": "USD",
-        "total_calculado": "1.264",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "TZS-USD",
-        "valor_actual": "0.00039",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.00039",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "KGS-USD",
-        "valor_actual": "0.0114",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0114",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "MGA-USD",
-        "valor_actual": "0.00024",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.00024",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "RUB-USD",
-        "valor_actual": "0.0128",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0128",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "BBD-USD",
-        "valor_actual": "0.4968",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.4968",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "KYD-USD",
-        "valor_actual": "1.2008",
-        "valor_comparacion": "USD",
-        "total_calculado": "1.2008",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "AWG-USD",
-        "valor_actual": "0.5556",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.5556",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "MDL-USD",
-        "valor_actual": "0.0579",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0579",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "ANG-USD",
-        "valor_actual": "0.559",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.559",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "UYU-USD",
-        "valor_actual": "0.0246",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0246",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "GMD-USD",
-        "valor_actual": "0.0137",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0137",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "SVC-USD",
-        "valor_actual": "0.1144",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.1144",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "OMR-USD",
-        "valor_actual": "2.6008",
-        "valor_comparacion": "USD",
-        "total_calculado": "2.6008",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "LRD-USD",
-        "valor_actual": "0.0054",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0054",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "LSL-USD",
-        "valor_actual": "0.0602",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0602",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "BDT-USD",
-        "valor_actual": "0.0081",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0081",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "TMT-USD",
-        "valor_actual": "0.2862",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.2862",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "XOF-USD",
-        "valor_actual": "0.0018",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0018",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "RWF-USD",
-        "valor_actual": "0.00068",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.00068",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "NOK-USD",
-        "valor_actual": "0.1049",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.1049",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "TJS-USD",
-        "valor_actual": "0.1053",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.1053",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "BWP-USD",
-        "valor_actual": "0.0746",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0746",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "SRD-USD",
-        "valor_actual": "0.0266",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0266",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "BSD-USD",
-        "valor_actual": "1.0007",
-        "valor_comparacion": "USD",
-        "total_calculado": "1.0007",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "ETB-USD",
-        "valor_actual": "0.0064",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0064",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "MUR-USD",
-        "valor_actual": "0.0215",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0215",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
+        "fecha_actualizacion": "2026-04-09 10:07:41"
     },
     {
         "codigo": "BAM-USD",
-        "valor_actual": "0.5981",
+        "valor_actual": "0.5984",
         "valor_comparacion": "USD",
-        "total_calculado": "0.5981",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
+        "total_calculado": "0.5984",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
     },
     {
-        "codigo": "KES-USD",
-        "valor_actual": "0.0077",
+        "codigo": "CHF-USD",
+        "valor_actual": "1.2642",
         "valor_comparacion": "USD",
-        "total_calculado": "0.0077",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
+        "total_calculado": "1.2642",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
     },
     {
-        "codigo": "MRU-USD",
-        "valor_actual": "0.0249",
+        "codigo": "CNY-USD",
+        "valor_actual": "0.1463",
         "valor_comparacion": "USD",
-        "total_calculado": "0.0249",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "GBP-USD",
-        "valor_actual": "1.3386",
-        "valor_comparacion": "USD",
-        "total_calculado": "1.3386",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "BGN-USD",
-        "valor_actual": "0.6",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.6",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "BHD-USD",
-        "valor_actual": "2.6491",
-        "valor_comparacion": "USD",
-        "total_calculado": "2.6491",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "QAR-USD",
-        "valor_actual": "0.2743",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.2743",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "KZT-USD",
-        "valor_actual": "0.0021",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0021",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "KHR-USD",
-        "valor_actual": "0.00025",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.00025",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "PGK-USD",
-        "valor_actual": "0.232",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.232",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
-    },
-    {
-        "codigo": "NIO-USD",
-        "valor_actual": "0.0272",
-        "valor_comparacion": "USD",
-        "total_calculado": "0.0272",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
+        "total_calculado": "0.1463",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
     },
     {
         "codigo": "AOA-USD",
         "valor_actual": "0.0011",
         "valor_comparacion": "USD",
         "total_calculado": "0.0011",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "MVR-USD",
+        "valor_actual": "0.0647",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0647",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "BDT-USD",
+        "valor_actual": "0.0081",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0081",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "XPF-USD",
+        "valor_actual": "0.0098",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0098",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "XAF-USD",
+        "valor_actual": "0.0018",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0018",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "ISK-USD",
+        "valor_actual": "0.0081",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0081",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "AWG-USD",
+        "valor_actual": "0.5556",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.5556",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "KRW-USD",
+        "valor_actual": "0.00068",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.00068",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "QAR-USD",
+        "valor_actual": "0.2743",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.2743",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "GTQ-USD",
+        "valor_actual": "0.1308",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.1308",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "EUR-USD",
+        "valor_actual": "1.1677",
+        "valor_comparacion": "USD",
+        "total_calculado": "1.1677",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "PHP-USD",
+        "valor_actual": "0.0167",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0167",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "GYD-USD",
+        "valor_actual": "0.0048",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0048",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "CLF-USD",
+        "valor_actual": "43.8408",
+        "valor_comparacion": "USD",
+        "total_calculado": "43.8408",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "PGK-USD",
+        "valor_actual": "0.2279",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.2279",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "TMT-USD",
+        "valor_actual": "0.2862",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.2862",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "TZS-USD",
+        "valor_actual": "0.00039",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.00039",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "VND-USD",
+        "valor_actual": "0.000038",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.000038",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "PAB-USD",
+        "valor_actual": "1.0007",
+        "valor_comparacion": "USD",
+        "total_calculado": "1.0007",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "KYD-USD",
+        "valor_actual": "1.2013",
+        "valor_comparacion": "USD",
+        "total_calculado": "1.2013",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
     },
     {
         "codigo": "LKR-USD",
         "valor_actual": "0.0032",
         "valor_comparacion": "USD",
         "total_calculado": "0.0032",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
+        "fecha_actualizacion": "2026-04-09 10:07:41"
     },
     {
-        "codigo": "NAD-USD",
-        "valor_actual": "0.0602",
+        "codigo": "UYU-USD",
+        "valor_actual": "0.0246",
         "valor_comparacion": "USD",
-        "total_calculado": "0.0602",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
+        "total_calculado": "0.0246",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
     },
     {
-        "codigo": "MWK-USD",
-        "valor_actual": "0.00058",
+        "codigo": "SDG-USD",
+        "valor_actual": "0.0017",
         "valor_comparacion": "USD",
-        "total_calculado": "0.00058",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
+        "total_calculado": "0.0017",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
     },
     {
-        "codigo": "TRY-USD",
-        "valor_actual": "0.0224",
+        "codigo": "SHP-USD",
+        "valor_actual": "1.3424",
         "valor_comparacion": "USD",
-        "total_calculado": "0.0224",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
+        "total_calculado": "1.3424",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
     },
     {
-        "codigo": "KWD-USD",
-        "valor_actual": "3.2367",
+        "codigo": "CAD-USD",
+        "valor_actual": "0.7217",
         "valor_comparacion": "USD",
-        "total_calculado": "3.2367",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
+        "total_calculado": "0.7217",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
     },
     {
         "codigo": "HUF-USD",
         "valor_actual": "0.0031",
         "valor_comparacion": "USD",
         "total_calculado": "0.0031",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "NAD-USD",
+        "valor_actual": "0.061",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.061",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "MUR-USD",
+        "valor_actual": "0.0215",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0215",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "MAD-USD",
+        "valor_actual": "0.1077",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.1077",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "SCR-USD",
+        "valor_actual": "0.0726",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0726",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "ANG-USD",
+        "valor_actual": "0.559",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.559",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "SAR-USD",
+        "valor_actual": "0.2665",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.2665",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "MKD-USD",
+        "valor_actual": "0.0189",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0189",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "RSD-USD",
+        "valor_actual": "0.01",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.01",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "SEK-USD",
+        "valor_actual": "0.1074",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.1074",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "INR-USD",
+        "valor_actual": "0.0109",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0109",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "JPY-USD",
+        "valor_actual": "0.0063",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0063",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "CVE-USD",
+        "valor_actual": "0.0105",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0105",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "NZD-USD",
+        "valor_actual": "0.5834",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.5834",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "JMD-USD",
+        "valor_actual": "0.0064",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0064",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "BYN-USD",
+        "valor_actual": "0.3428",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.3428",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "COP-USD",
+        "valor_actual": "0.00027",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.00027",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "SZL-USD",
+        "valor_actual": "0.0602",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0602",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "KHR-USD",
+        "valor_actual": "0.00025",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.00025",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "KGS-USD",
+        "valor_actual": "0.0114",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0114",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "CZK-USD",
+        "valor_actual": "0.0479",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0479",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "LAK-USD",
+        "valor_actual": "0.000045",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.000045",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "DZD-USD",
+        "valor_actual": "0.0076",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0076",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "HTG-USD",
+        "valor_actual": "0.0076",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0076",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "LBP-USD",
+        "valor_actual": "0.000011",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.000011",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "BIF-USD",
+        "valor_actual": "0.00034",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.00034",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "UAH-USD",
+        "valor_actual": "0.0231",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0231",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "BSD-USD",
+        "valor_actual": "1.0007",
+        "valor_comparacion": "USD",
+        "total_calculado": "1.0007",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "SVC-USD",
+        "valor_actual": "0.1144",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.1144",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "BHD-USD",
+        "valor_actual": "2.6489",
+        "valor_comparacion": "USD",
+        "total_calculado": "2.6489",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "IDR-USD",
+        "valor_actual": "0.000059",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.000059",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "JOD-USD",
+        "valor_actual": "1.4104",
+        "valor_comparacion": "USD",
+        "total_calculado": "1.4104",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "VES-USD",
+        "valor_actual": "0.0021",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0021",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "MNT-USD",
+        "valor_actual": "0.6604",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.6604",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "GEL-USD",
+        "valor_actual": "0.3724",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.3724",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "THB-USD",
+        "valor_actual": "0.0312",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0312",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "MWK-USD",
+        "valor_actual": "0.00058",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.00058",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "AFN-USD",
+        "valor_actual": "0.0156",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0156",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "CLP-USD",
+        "valor_actual": "0.0011",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0011",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "BMD-USD",
+        "valor_actual": "1",
+        "valor_comparacion": "USD",
+        "total_calculado": "1",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "NPR-USD",
+        "valor_actual": "0.0068",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0068",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "NGN-USD",
+        "valor_actual": "0.00073",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.00073",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "UZS-USD",
+        "valor_actual": "0.000082",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.000082",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "BGN-USD",
+        "valor_actual": "0.6",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.6",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "BOB-USD",
+        "valor_actual": "0.1449",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.1449",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "PEN-USD",
+        "valor_actual": "0.2922",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.2922",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "MMK-USD",
+        "valor_actual": "0.00031",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.00031",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "LSL-USD",
+        "valor_actual": "0.0602",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0602",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "DOP-USD",
+        "valor_actual": "0.0165",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0165",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "KES-USD",
+        "valor_actual": "0.0077",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0077",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "BRL-USD",
+        "valor_actual": "0.195",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.195",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "GBP-USD",
+        "valor_actual": "1.3407",
+        "valor_comparacion": "USD",
+        "total_calculado": "1.3407",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "LYD-USD",
+        "valor_actual": "0.1576",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.1576",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "ETB-USD",
+        "valor_actual": "0.0064",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0064",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "DKK-USD",
+        "valor_actual": "0.1563",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.1563",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "AUD-USD",
+        "valor_actual": "0.7034",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.7034",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "DJF-USD",
+        "valor_actual": "0.0056",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0056",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "KWD-USD",
+        "valor_actual": "3.2362",
+        "valor_comparacion": "USD",
+        "total_calculado": "3.2362",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "CUP-USD",
+        "valor_actual": "0.0417",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0417",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "BBD-USD",
+        "valor_actual": "0.497",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.497",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "MDL-USD",
+        "valor_actual": "0.0581",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0581",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "PKR-USD",
+        "valor_actual": "0.0036",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0036",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "UGX-USD",
+        "valor_actual": "0.00027",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.00027",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "LRD-USD",
+        "valor_actual": "0.0054",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0054",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "BTN-USD",
+        "valor_actual": "0.0108",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0108",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "CDF-USD",
+        "valor_actual": "0.00043",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.00043",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "MRU-USD",
+        "valor_actual": "0.0249",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0249",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "GMD-USD",
+        "valor_actual": "0.0137",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0137",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "PYG-USD",
+        "valor_actual": "0.00015",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.00015",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "ILS-USD",
+        "valor_actual": "0.324",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.324",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "RUB-USD",
+        "valor_actual": "0.0128",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0128",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "TND-USD",
+        "valor_actual": "0.3458",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.3458",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "BND-USD",
+        "valor_actual": "0.7849",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.7849",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "SRD-USD",
+        "valor_actual": "0.0266",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0266",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "NOK-USD",
+        "valor_actual": "0.105",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.105",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "TRY-USD",
+        "valor_actual": "0.0224",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0224",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "MYR-USD",
+        "valor_actual": "0.2511",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.2511",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "CRC-USD",
+        "valor_actual": "0.0022",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0022",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "KZT-USD",
+        "valor_actual": "0.0021",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0021",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "SGD-USD",
+        "valor_actual": "0.7842",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.7842",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "MOP-USD",
+        "valor_actual": "0.1241",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.1241",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "TWD-USD",
+        "valor_actual": "0.0314",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0314",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "MGA-USD",
+        "valor_actual": "0.00024",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.00024",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "TJS-USD",
+        "valor_actual": "0.1053",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.1053",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "OMR-USD",
+        "valor_actual": "2.6008",
+        "valor_comparacion": "USD",
+        "total_calculado": "2.6008",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "AZN-USD",
+        "valor_actual": "0.5882",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.5882",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "EGP-USD",
+        "valor_actual": "0.0188",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0188",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "SOS-USD",
+        "valor_actual": "0.0018",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0018",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "RWF-USD",
+        "valor_actual": "0.00068",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.00068",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "XCD-USD",
+        "valor_actual": "0.37",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.37",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "GHS-USD",
+        "valor_actual": "0.0908",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0908",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "MZN-USD",
+        "valor_actual": "0.0156",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0156",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "XOF-USD",
+        "valor_actual": "0.0018",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0018",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "FJD-USD",
+        "valor_actual": "0.4515",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.4515",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "ALL-USD",
+        "valor_actual": "0.0122",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0122",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "NIO-USD",
+        "valor_actual": "0.0272",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0272",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "GNF-USD",
+        "valor_actual": "0.00011",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.00011",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "PLN-USD",
+        "valor_actual": "0.2742",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.2742",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "RON-USD",
+        "valor_actual": "0.2293",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.2293",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "BWP-USD",
+        "valor_actual": "0.0746",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0746",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
+    },
+    {
+        "codigo": "KMF-USD",
+        "valor_actual": "0.0024",
+        "valor_comparacion": "USD",
+        "total_calculado": "0.0024",
+        "fecha_actualizacion": "2026-04-09 10:07:41"
     },
     {
         "codigo": "USD-USD",
         "valor_actual": "1",
         "valor_comparacion": "USD",
         "total_calculado": "1",
-        "fecha_actualizacion": "2026-04-09 08:16:12"
+        "fecha_actualizacion": "2026-04-09 10:07:41"
     }
 ]
