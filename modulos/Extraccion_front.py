@@ -7,10 +7,10 @@ logger = logging.getLogger(__name__)
 
 # --- Configuración anti-detección ---
 # Tamaño de cada lote de URLs a procesar consecutivamente
-BATCH_SIZE = 5
+BATCH_SIZE = 3
 # Rango de delay (en segundos) entre lotes para simular pausa humana
 DELAY_ENTRE_LOTES_MIN = 5
-DELAY_ENTRE_LOTES_MAX = 15
+DELAY_ENTRE_LOTES_MAX = 20
 # Selector CSS del precio en Google Finance (para detectar bloqueos)
 SELECTOR_PRECIO = 'div.YMlKec.fxKbKc'
 # Pool de User-Agents para rotar por sesión
