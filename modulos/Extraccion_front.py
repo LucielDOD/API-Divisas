@@ -12,14 +12,11 @@ BATCH_SIZE = 5
 DELAY_ENTRE_LOTES_MIN = 3
 DELAY_ENTRE_LOTES_MAX = 8
 # Selector CSS del precio en Google Finance (para detectar bloqueos)
-SELECTOR_PRECIO = 'YMlKec fxKbKc'
-
 # Headers base para que la petición de requests sea más natural
-HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-    'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
-}
+# NOTA: No usamos User-Agent de navegador porque Google Finance nos enviaría 
+# la versión JavaScript (React) que oculta el precio. Usando el User-Agent por
+# defecto de Requests (o vacío), Google nos envía el HTML estático con el precio.
+HEADERS = {}
 
 
 def _fetch_url_sync(url: str) -> str:
