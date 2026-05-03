@@ -21,8 +21,22 @@ def actualizar_divisas_soportadas(divisas_exitosas: set):
     """
     Reescribe modulos/divisas_list.py eliminando las divisas que NO se pudieron
     extraer en esta ejecución (no devolvieron datos válidos desde Google Finance).
+    Solo actúa si el porcentaje de éxito es >= 50% del total de divisas soportadas,
+    para evitar degradar la lista por bloqueos temporales de Google Finance.
     """
     divisas_actuales = set(DIVISAS_SOPORTADAS)
+    total_esperadas = len(divisas_actuales)
+    exitosas_sin_usd = divisas_exitosas - {"USD"}
+
+    # Umbral de seguridad: solo limpiar la lista si al menos el 50% tuvo éxito
+    if len(exitosas_sin_usd) < total_esperadas * 0.5:
+        logger.warning(
+            f"Solo {len(exitosas_sin_usd)}/{total_esperadas} divisas se extrajeron exitosamente "
+            f"({len(exitosas_sin_usd)/total_esperadas*100:.1f}%). "
+            f"Umbral mínimo (50%) no alcanzado. Se conserva divisas_list.py sin cambios."
+        )
+        return
+
     divisas_removidas = divisas_actuales - divisas_exitosas - {"USD"}  # USD es manual
 
     if not divisas_removidas:
@@ -87,18 +101,24 @@ async def main():
         if divisa_data:
             divisas_extraidas.append(divisa_data)
             divisas_exitosas.add(codigo_divisa)
-            
-    # Añadimos USD manualmente por si se necesita de base
+
+    # Validar que hay suficientes divisas antes de continuar
+    # (un número bajo indica bloqueo de Google Finance)
+    MINIMO_DIVISAS_VALIDAS = 10
+    if len(divisas_extraidas) < MINIMO_DIVISAS_VALIDAS:
+        logger.error(
+            f"Solo se extrajeron {len(divisas_extraidas)} divisas válidas (mínimo requerido: {MINIMO_DIVISAS_VALIDAS}). "
+            f"Posible bloqueo de Google Finance. Se aborta para no sobrescribir datos.json con datos incompletos."
+        )
+        return
+
+    # Añadimos USD manualmente como referencia base (valor 1:1)
     divisas_extraidas.append({
         "codigo": "USD-USD",
         "valor_comparacion": "USD",
         "valor_actual": Decimal('1.0')
     })
     divisas_exitosas.add("USD")
-    
-    if not divisas_extraidas:
-        logger.warning(f"No se extrajeron divisas válidas. Verifica la estructura del HTML.")
-        return
         
     logger.info(f"Guardando {len(divisas_extraidas)} registros en la base de datos...")
     
