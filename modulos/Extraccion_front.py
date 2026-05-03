@@ -7,11 +7,12 @@ logger = logging.getLogger(__name__)
 
 # --- Configuración anti-detección (Requests) ---
 # Tamaño de cada lote de URLs a procesar consecutivamente
-BATCH_SIZE = 5
+BATCH_SIZE = 3
 # Rango de delay (en segundos) entre lotes para simular pausa humana
-DELAY_ENTRE_LOTES_MIN = 3
-DELAY_ENTRE_LOTES_MAX = 8
+DELAY_ENTRE_LOTES_MIN = 5
+DELAY_ENTRE_LOTES_MAX = 20
 # Selector CSS del precio en Google Finance (para detectar bloqueos)
+SELECTOR_PRECIO = 'YMlKec fxKbKc'
 # Headers base para que la petición de requests sea más natural
 # NOTA: No usamos User-Agent de navegador porque Google Finance nos enviaría 
 # la versión JavaScript (React) que oculta el precio. Usando el User-Agent por
